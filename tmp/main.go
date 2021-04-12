@@ -73,6 +73,6 @@ func Example_customMarshalJSON() {
 func main() {
 	log.SetFlags(log.Ldate | log.Llongfile)
 	Example_customMarshalJSON()
-	l := structures.ListNode{Val: 122, Next: nil}
+	l := structures.Ints2ListNode([]int{1, 2, 3, 4})
 	fmt.Println(l)
 }
